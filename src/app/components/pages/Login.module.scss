@@ -1,0 +1,15 @@
+.container {
+  inline-size: 100%;
+  max-inline-size: 320px;
+  margin: unset;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+
+  p {
+    margin-block-end: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}

@@ -1,0 +1,55 @@
+$black: #000000;
+$orange: #ff7819;
+$white: #ffffff;
+$off-white: #f6f6f6;
+
+$body-color: $black;
+$bg-color: $off-white;
+
+$border-radius: 6px;
+
+@font-face {
+  font-family: 'Padauk';
+  src: url(../fonts/Padauk-Regular.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Padauk', sans-serif;
+  background-color: $bg-color;
+  color: $body-color;
+}
+
+.container {
+  inline-size: 100%;
+  max-inline-size: 1080px;
+  margin: auto;
+  margin-block-start: 10vh;
+  display: flex;
+  overflow-x: hidden;
+  flex-direction: column;
+
+  * {
+    margin-block-end: 0.5em;
+  }
+}
+
+// Components
+input {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  background-color: $white;
+  border: #dadce0 1px solid;
+  border-radius: $border-radius;
+}
+
+button {
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
