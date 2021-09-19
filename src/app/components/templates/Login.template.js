@@ -1,7 +1,5 @@
-import style from './LoginTemplate.module.scss';
-
 const LoginTemplate = ({ children }) => {
-  return <div className={style.wrapper}>{children}</div>;
+  return <div className="login__wrapper">{children}</div>;
 };
 
 export default LoginTemplate;

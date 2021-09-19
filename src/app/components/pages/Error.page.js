@@ -1,15 +1,13 @@
-import { NavLink } from 'react-router-dom';
-
-import style from './Error.module.scss';
+import { Link } from 'react-router-dom';
 
 const ErrorPage = () => {
   return (
-    <section className={`${style.container} container`}>
-      <h2>Something's missing</h2>
+    <section className="error__wrapper container">
+      <h2 className="h3">Something's missing</h2>
       <p>The thing is the page you're looking for does not exist</p>
-      <NavLink to="/">
+      <Link to="/">
         <button type="button">Go back</button>
-      </NavLink>
+      </Link>
     </section>
   );
 };
