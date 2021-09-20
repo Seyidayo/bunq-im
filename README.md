@@ -25,3 +25,4 @@ View the a live demo of the app [here](https://bunq-im.netlify.app)
 - Storing messages temporarily
 - Notifications
 - Offline support
+- integration/e2e tests
