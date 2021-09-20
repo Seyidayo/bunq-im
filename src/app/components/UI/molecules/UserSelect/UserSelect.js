@@ -1,7 +1,8 @@
+import PropTypes from 'prop-types';
 import { useContext, useEffect, useState } from 'react';
 
 import DataContext from 'app/context';
-import Loader from '../../atoms/Loader/Loader';
+import Loader from 'app/components/UI/atoms/Loader';
 
 const UserSelect = ({ onChange, name }) => {
   const [selected, setSelected] = useState([]);
@@ -67,6 +68,11 @@ const UserSelect = ({ onChange, name }) => {
       ))}
     </ul>
   );
+};
+
+UserSelect.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  name: PropTypes.string.isRequired,
 };
 
 export default UserSelect;

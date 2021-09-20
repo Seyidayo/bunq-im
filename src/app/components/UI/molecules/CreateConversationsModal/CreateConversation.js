@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { Fragment, useContext, useEffect, useState } from 'react';
 import { useHistory, withRouter } from 'react-router-dom';
 
@@ -117,6 +118,10 @@ const CreateConversationsModal = ({ location }) => {
       </Modal>
     </Fragment>
   );
+};
+
+CreateConversationsModal.propTypes = {
+  location: PropTypes.object,
 };
 
 export default withRouter(CreateConversationsModal);

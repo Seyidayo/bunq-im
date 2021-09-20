@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { parseTime } from 'app/utils/helpers';
 
 const MessageBox = ({ message, isSender }) => {
@@ -17,6 +18,15 @@ const MessageBox = ({ message, isSender }) => {
       <span>{parseTime(message.sent_at)}</span>
     </div>
   );
+};
+
+MessageBox.defaultProps = {
+  isSender: false,
+};
+
+MessageBox.propTypes = {
+  message: PropTypes.object.isRequired,
+  isSender: PropTypes.bool.isRequired,
 };
 
 export default MessageBox;

@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { createPortal } from 'react-dom';
+import PropTypes from 'prop-types';
 
 import useOnClickOutside from 'app/hooks/useOnClickOutside';
 
@@ -41,6 +42,16 @@ const Modal = ({ children, onCloseModal, isModalOpen }) => {
       )}
     </ModalOuter>
   );
+};
+
+Modal.defaultProps = {
+  isModalOpen: false,
+  onCloseModal: () => {},
+};
+
+Modal.propTypes = {
+  isModalOpen: PropTypes.bool,
+  onCloseModal: PropTypes.func,
 };
 
 export default Modal;
