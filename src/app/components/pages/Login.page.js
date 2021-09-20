@@ -22,11 +22,15 @@ const LoginPage = () => {
 
   const handleLogin = async (event) => {
     event.preventDefault();
-
     try {
       setStatus('submitting');
-      await api.get('/ping').then((response) => response.data);
-      history.push('/im');
+      localStorage.setItem('token', process.env.REACT_APP_API_TOKEN);
+      await api
+        .get('/ping')
+        .then((response) => response.data)
+        .then(() => {
+          history.push('/im');
+        });
     } catch {
       setStatus('error');
     } finally {
@@ -39,16 +43,20 @@ const LoginPage = () => {
       if (isLoggedIn) {
         history.push('/im');
       }
-      localStorage.setItem('token', process.env.REACT_APP_API_TOKEN);
     };
 
     initializeApp();
-  }, [isLoggedIn, history]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
-    <form onSubmit={handleLogin} className="container login__container">
+    <form
+      onSubmit={handleLogin}
+      id="login-form"
+      className="container login__container"
+    >
       <h1 className="h4">bunqIM</h1>
-      <label for="email-input" hidden>
+      <label htmlFor="email-input" hidden>
         Email address
       </label>
       <input
@@ -60,7 +68,7 @@ const LoginPage = () => {
         placeholder="Email address"
       />
 
-      <label for="password-input" hidden>
+      <label htmlFor="password-input" hidden>
         Password
       </label>
       <input

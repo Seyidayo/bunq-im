@@ -88,6 +88,9 @@ const Conversations = ({ children }) => {
                 activeClassName="active"
               >
                 <div className="conversation__members">
+                  {conversation.name && (
+                    <strong>{conversation.name}&nbsp; - &nbsp;</strong>
+                  )}
                   {conversation.members
                     .slice(0, MAX_USERS)
                     .map((member, index) => (

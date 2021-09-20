@@ -100,7 +100,7 @@ const Messages = () => {
     fetchConversationDetails();
     fetchLatestMessagesInConversation();
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [conversation_id]);
 
   return (
     <section>
@@ -113,14 +113,22 @@ const Messages = () => {
           {messages.map((message, index) => (
             <MessageBubble
               key={index}
-              text={message.text}
-              date={message.sent_at}
+              isSender={message.user_id.toString() === user_id.toString()}
+              message={message}
             />
           ))}
         </div>
-        <form onSubmit={handleSendMessage} className="messages__action-bar">
+        <form
+          onSubmit={handleSendMessage}
+          className="messages__action-bar"
+          id="create-message-form"
+        >
           <div className="messages__action-bar__container">
+            <label htmlFor="message-input" hidden>
+              Message
+            </label>
             <textarea
+              id="message-input"
               rows="1"
               name="text"
               autoFocus={true}
