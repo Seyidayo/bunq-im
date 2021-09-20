@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ViewUsers /> It renders correctly and matches snapshot 1`] = `
+<aside
+  className="app__sidebar"
+>
+  <header
+    className="header text-orange navbar__header"
+  >
+    <a
+      href="/im"
+      onClick={[Function]}
+    >
+      <h1
+        className="h4"
+      >
+        bunqIM
+      </h1>
+    </a>
+    <ul>
+      <li />
+      <li>
+        <button
+          className="secondary"
+          onClick={[Function]}
+          title="Logout"
+          type="button"
+        >
+          LG
+        </button>
+      </li>
+    </ul>
+  </header>
+</aside>
+`;

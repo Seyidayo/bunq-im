@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ViewMessages /> It renders correctly and matches snapshot 1`] = `
+<section>
+  <header
+    className="header"
+  >
+    <h2
+      className="text-orange h4"
+    >
+      Messages
+    </h2>
+  </header>
+  <div
+    className="messages__wrapper"
+  >
+    <div
+      className="messages__container"
+    />
+    <form
+      className="messages__action-bar"
+      id="create-message-form"
+      onSubmit={[Function]}
+    >
+      <div
+        className="messages__action-bar__container"
+      >
+        <label
+          hidden={true}
+          htmlFor="message-input"
+        >
+          Message
+        </label>
+        <textarea
+          autoFocus={true}
+          id="message-input"
+          name="text"
+          onChange={[Function]}
+          placeholder="Start a conversation"
+          rows="1"
+          value=""
+        />
+        <div>
+          <button
+            disabled={false}
+            type="submit"
+          >
+             
+            Send
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+`;

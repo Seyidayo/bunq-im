@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginPage /> It renders correctly and matches snapshot 1`] = `
+<form
+  className="container login__container"
+  id="login-form"
+  onSubmit={[Function]}
+>
+  <h1
+    className="h4"
+  >
+    bunqIM
+  </h1>
+  <label
+    hidden={true}
+    htmlFor="email-input"
+  >
+    Email address
+  </label>
+  <input
+    id="email-input"
+    name="email"
+    onChange={[Function]}
+    placeholder="Email address"
+    type="email"
+    value="bunqer@bunq.com"
+  />
+  <label
+    hidden={true}
+    htmlFor="password-input"
+  >
+    Password
+  </label>
+  <input
+    id="password-input"
+    name="password"
+    onChange={[Function]}
+    placeholder="Password"
+    type="password"
+    value="bunqer123"
+  />
+  <button
+    disabled={false}
+    type="submit"
+  >
+       Log in
+  </button>
+</form>
+`;

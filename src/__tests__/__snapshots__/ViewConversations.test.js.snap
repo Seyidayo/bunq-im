@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ViewConversations /> It renders correctly and matches snapshot 1`] = `
+<section
+  className="conversation__wrapper"
+>
+  <aside>
+    <header
+      className="header"
+    >
+      <h2
+        className="text-orange h4"
+      >
+        Conversations
+      </h2>
+    </header>
+  </aside>
+</section>
+`;
