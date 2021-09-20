@@ -2,11 +2,12 @@ import PropTypes from 'prop-types';
 import { Fragment, useContext, useEffect, useState } from 'react';
 import { useHistory, withRouter } from 'react-router-dom';
 
+import DataContext from 'app/context';
+import ConversationApiService from 'app/api/conversations';
 import Modal from 'app/components/UI/atoms/Modal/Modal';
 import UserSelect from 'app/components/UI/molecules/UserSelect';
 import Spinner from 'app/components/UI/atoms/Spinner';
-import ConversationApiService from 'app/api/conversations';
-import DataContext from 'app/context';
+import { ReactComponent as GroupMessageIcon } from 'app/assets/icons/chat.svg';
 
 const CreateConversationsModal = ({ location }) => {
   const [status, setStatus] = useState('idle');
@@ -75,7 +76,7 @@ const CreateConversationsModal = ({ location }) => {
         className="secondary"
         title="Create group conversation"
       >
-        CG
+        <GroupMessageIcon />
       </button>
       <Modal isModalOpen={isModalOpen} onCloseModal={handleCloseModal}>
         <header className="modal__header">

@@ -3,6 +3,7 @@ import { Link, useHistory, withRouter } from 'react-router-dom';
 
 import Spinner from 'app/components/UI/atoms/Spinner';
 import CreateConversationsModal from 'app/components/UI/molecules/CreateConversationsModal';
+import { ReactComponent as LogoutIcon } from 'app/assets/icons/logout.svg';
 
 const Navbar = () => {
   const [status, setStatus] = useState('idle');
@@ -34,7 +35,7 @@ const Navbar = () => {
             className="secondary"
             title="Logout"
           >
-            {status === 'submitting' ? <Spinner /> : 'LG'}
+            {status === 'submitting' ? <Spinner /> : <LogoutIcon />}
           </button>
         </li>
       </ul>

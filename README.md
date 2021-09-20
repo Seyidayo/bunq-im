@@ -24,4 +24,4 @@ View the a live demo of the app [here](https://bunq-im.netlify.app)
 - Image sharing
 - Storing messages temporarily
 - Notifications
-- Add icons to navbar actions
+- Offline support

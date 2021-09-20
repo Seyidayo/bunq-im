@@ -127,9 +127,9 @@ const Messages = () => {
             <label htmlFor="message-input" hidden>
               Message
             </label>
-            <textarea
+            <input
+              type="text"
               id="message-input"
-              rows="1"
               name="text"
               autoFocus={true}
               onChange={handleChange}

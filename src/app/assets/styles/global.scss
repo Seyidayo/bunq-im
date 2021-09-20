@@ -145,6 +145,7 @@ ul {
   inline-size: 100%;
   block-size: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -160,6 +161,20 @@ ul {
 
     input {
       margin-block-end: 1rem;
+    }
+  }
+
+  p {
+    font-size: 1rem;
+    letter-spacing: -0.01em;
+    font-weight: bold;
+    margin-block-start: 0.5em;
+    display: flex;
+    align-items: center;
+
+    a {
+      text-decoration: underline;
+      margin-inline-start: 0.5em;
     }
   }
 }
@@ -323,7 +338,7 @@ ul {
         outline: 1px solid -webkit-focus-ring-color;
       }
 
-      textarea {
+      input {
         inline-size: 100%;
         outline: 0;
         border: 0;
@@ -414,5 +429,13 @@ input[type='checkbox']:checked ~ .user-select {
 
   p {
     margin-inline-start: 0.25rem;
+  }
+}
+
+svg {
+  inline-size: 20px;
+  block-size: 20px;
+  path {
+    fill: $orange;
   }
 }

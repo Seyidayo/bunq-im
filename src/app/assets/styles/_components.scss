@@ -54,18 +54,21 @@
     span {
       margin-inline-start: 2.75rem;
     }
+    .message__bubble {
+      background-color: $white;
+      color: $orange;
+    }
   }
   &[data-sender='true'] {
     margin: 0 0 0 auto;
     .message__bubble {
+      margin-inline-start: auto;
       border-radius: $bubble-border-radius $bubble-border-radius 0
         $bubble-border-radius;
     }
   }
 
   &:last-of-type {
-    // &[data-sender='true'] + &[data-sender='false'],
-    // &[data-sender='false'] + &[data-sender='true'] {
     span {
       display: inline-block;
     }
