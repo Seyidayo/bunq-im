@@ -1,0 +1,14 @@
+.text-ellipsis {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text-orange {
+  color: $orange;
+}
+
+.user__avatar {
+  border-radius: 50%;
+}
