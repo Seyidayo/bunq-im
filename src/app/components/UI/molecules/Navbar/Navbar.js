@@ -4,11 +4,9 @@ import { Link, useHistory, useParams, withRouter } from 'react-router-dom';
 import Spinner from 'app/components/UI/atoms/Spinner';
 import CreateConversationsModal from 'app/components/UI/molecules/CreateConversationsModal';
 
-const Navbar = ({ match, location }) => {
+const Navbar = () => {
   const [status, setStatus] = useState('idle');
   const history = useHistory();
-  const { user_id } = useParams();
-  console.log(location, match, user_id);
 
   const handleLogout = (event) => {
     event.preventDefault();
