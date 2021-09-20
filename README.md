@@ -21,4 +21,7 @@ View the a live demo of the app [here](https://bunq-im.netlify.app)
 
 ## Areas of Improvement
 
+- Responsive mobile view
+- Image sharing
+- Storing messages temporarily
 - Notifications
