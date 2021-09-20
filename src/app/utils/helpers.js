@@ -3,6 +3,11 @@ var relativeTime = require('dayjs/plugin/relativeTime');
 
 dayjs.extend(relativeTime);
 
+/**
+ * Get parsed time
+ * @param {string} str
+ * @returns {string}
+ */
 export const parseTime = (str) => {
   const hoursAgo = dayjs().diff(dayjs(str), 'hours');
   const daysAgo = dayjs().diff(dayjs(str), 'days');
@@ -12,10 +17,6 @@ export const parseTime = (str) => {
   return dayjs(str).fromNow();
 };
 
-export const formatTime = (str) => {
-  return dayjs(str);
-};
-
 const quotes = [
   'Good conversation is as stimulating as black coffee, and just as hard to sleep after.',
   'Nothing compares to a beautiful conversation with a beautiful mind.',
@@ -23,6 +24,10 @@ const quotes = [
   'Conversation should touch everything, but should concentrate itself on nothing.',
 ];
 
+/**
+ * Get a random quote
+ * @returns {string}
+ */
 export const getRandomQuote = () => {
   return quotes[Math.floor(Math.random() * quotes.length)];
 };
