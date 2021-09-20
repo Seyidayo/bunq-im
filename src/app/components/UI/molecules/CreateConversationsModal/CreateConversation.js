@@ -1,7 +1,7 @@
 import { Fragment, useContext, useEffect, useState } from 'react';
 import { useHistory, withRouter } from 'react-router-dom';
 
-import Modal from 'app/components/UI/atoms/Modal';
+import Modal from 'app/components/UI/atoms/Modal/Modal';
 import UserSelect from 'app/components/UI/molecules/UserSelect';
 import Spinner from 'app/components/UI/atoms/Spinner';
 import ConversationApiService from 'app/api/conversations';

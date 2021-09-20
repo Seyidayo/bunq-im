@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 import DataContext from 'app/context';
 import { parseTime } from 'app/utils/helpers';
-import Loader from 'app/components/UI/atoms/Loader';
-import Navbar from '../molecules/Navbar';
+import Loader from 'app/components/UI/atoms/Loader/Loader';
+import Navbar from 'app/components/UI/molecules/Navbar/Navbar';
 
 const Users = () => {
   const { users, fetchUsers } = useContext(DataContext);

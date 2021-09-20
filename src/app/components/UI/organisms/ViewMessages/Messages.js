@@ -3,9 +3,9 @@ import { useParams } from 'react-router-dom';
 
 import MessageApiService from 'app/api/messages';
 import DataContext from 'app/context';
-import MessageBubble from 'app/components/UI/atoms/MessageBubble';
+import MessageBubble from 'app/components/UI/atoms/MessageBubble/MessageBubble';
 import Spinner from 'app/components/UI/atoms/Spinner';
-import Loader from 'app/components/UI/atoms/Loader';
+import Loader from 'app/components/UI/atoms/Loader/Loader';
 import ConversationApiService from 'app/api/conversations';
 
 const Messages = () => {

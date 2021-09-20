@@ -3,7 +3,7 @@ import { NavLink, useHistory, useParams } from 'react-router-dom';
 
 import ConversationApiService from 'app/api/conversations';
 import DataContext from 'app/context';
-import Loader from 'app/components/UI/atoms/Loader';
+import Loader from 'app/components/UI/atoms/Loader/Loader';
 import Spinner from 'app/components/UI/atoms/Spinner';
 import { getRandomQuote } from 'app/utils/helpers';
 

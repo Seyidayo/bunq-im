@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 
-import UsersConversations from 'app/components/UI/organisms/Conversations';
+import UsersConversations from 'app/components/UI/organisms/ViewConversations';
 
 const UsersPage = () => {
   const { user_id } = useParams();

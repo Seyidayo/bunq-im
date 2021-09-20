@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 
 import DataContext from 'app/context';
-import Loader from '../atoms/Loader';
+import Loader from '../../atoms/Loader/Loader';
 
 const UserSelect = ({ onChange, name }) => {
   const [selected, setSelected] = useState([]);

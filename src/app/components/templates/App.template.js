@@ -1,4 +1,4 @@
-import Users from 'app/components/UI/organisms/Users';
+import Users from 'app/components/UI/organisms/ViewUsers';
 
 const AppTemplate = ({ children }) => {
   return (

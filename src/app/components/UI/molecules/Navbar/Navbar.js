@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useHistory, useParams, withRouter } from 'react-router-dom';
 
 import Spinner from 'app/components/UI/atoms/Spinner';
-import CreateConversationsModal from './CreateConversationsModal';
+import CreateConversationsModal from 'app/components/UI/molecules/CreateConversationsModal';
 
 const Navbar = ({ match, location }) => {
   const [status, setStatus] = useState('idle');
