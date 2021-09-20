@@ -14,10 +14,9 @@ View the a live demo of the app [here](https://bunq-im.netlify.app)
 
 - Clone this repo `git clone git@github.com:seyidayo/bunq-im`.
 - Install dependencies `npm install`.
-- Start app `npm start`.
-- Run tests
-
-## Project architecture
+- Start app `npm run start`.
+- Run tests `npm run test`
+- Build for deployment `npm run build`
 
 ## Areas of Improvement
 
@@ -25,3 +24,4 @@ View the a live demo of the app [here](https://bunq-im.netlify.app)
 - Image sharing
 - Storing messages temporarily
 - Notifications
+- Add icons to navbar actions
